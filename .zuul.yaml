@@ -17,7 +17,7 @@
         name: test-job
 
 - project:
-    name: networking-cisco
+    name: openstack/networking-cisco
     check:
       jobs:
         - test-job
