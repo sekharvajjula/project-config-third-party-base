@@ -14,12 +14,15 @@
 
 - jobs:
     - job:
-        name: test-job
+        name: base
         run: playbooks/run.yaml
         nodeset:
           nodes:
             - name: ubuntu-xenial
               label: ubuntu-xenial
+    - job:
+        name: test-job
+        parent: base
 
 - project:
     name: openstack/networking-cisco
