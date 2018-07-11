@@ -15,6 +15,11 @@
 - jobs:
     - job:
         name: test-job
+        run: playbooks/run.yaml
+        nodeset:
+          nodes:
+            - name: ubuntu-xenial
+              label: ubuntu-xenial
 
 - project:
     name: openstack/networking-cisco
