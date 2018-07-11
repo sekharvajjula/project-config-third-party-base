@@ -4,7 +4,8 @@
     manager: independent
     trigger:
       gerrit:
-        - comment: cisco-zuulv3-test
+        - event: comment-added
+          comment: cisco-zuulv3-test
     success:
       gerrit:
         Verified: 1
