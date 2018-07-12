@@ -15,6 +15,7 @@
 
 - job:
     name: third-base
+    parent: null
     run: playbooks/run.yaml
     nodeset:
       nodes:
