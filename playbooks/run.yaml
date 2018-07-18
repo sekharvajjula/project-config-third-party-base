@@ -2,3 +2,6 @@
   tasks:
     - name: test
       ping:
+    - name: wait for 20 seconds
+      wait_for:
+        timeout: 20
