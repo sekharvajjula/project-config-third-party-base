@@ -22,6 +22,7 @@
     nodeset:
       nodes:
         - name: ubuntu
+          label: ubuntu
 
 - secret:
     name: site_logs
