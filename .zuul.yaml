@@ -26,6 +26,8 @@
       nodes:
         - name: ubuntu
           label: ubuntu
+    secrets:
+      - site_logs
 
 - job:
     name: test-job
