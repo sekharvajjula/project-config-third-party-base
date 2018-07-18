@@ -19,6 +19,8 @@
     abstract: true
     post-run:
       - playbooks/post-logs.yaml
+    roles:
+      - zuul: zuul-jobs
     nodeset:
       nodes:
         - name: ubuntu
