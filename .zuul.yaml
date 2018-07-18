@@ -15,16 +15,63 @@
 
 - job:
     name: third-base
-    parent: null
+    parent: base
     run: playbooks/run.yaml
+    post-run:
+      - playbooks/post-logs.yaml
     nodeset:
       nodes:
         - name: ubuntu
-          label: ubuntu
 
-- job:
-    name: test-job
-    parent: third-base
+- secret:
+    name: site_logs
+    data:
+      fqdn: 192.133.158.231
+      path: /srv/static/logs
+      ssh_known_hosts: |
+        192.133.158.231 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClvOZAAIKUP7ya+6IvfqUecHiCpbSydFWI44qqFfASt1w/2hQH2e94VuvZBQXIsBmO0DPmeDo1XLgG0k5tNOoFHMcIhukBaHFn0JGIVXjsNfM49U/dZQ0JVtVimGtTXPMeRkh2h81o6aMszmHtbTQkXWeHTvlNmpiyf8gWRLVZQy1T/adipITZeyp6KitFVfHpSyv4vn3Ymo99/US114S1ermZoFg3pIhY8XcqEtvMRgvb9H/VcSIJKIEhknHlEZqQ3M7MRwu5BqelzvzVB+1IiP92ycBSEjI3EGnwxTdAF+1uvjT4KMPcNpTK83Kr2GIw0q1mMDOTUJn9IbvJtCPX
+      ssh_username: rocket-man
+      ssh_private_key: !encrypted/pkcs1-oaep
+        - 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
 
 - project:
     name: openstack/networking-cisco
