@@ -41,7 +41,7 @@
       path: /srv/static/logs
       ssh_known_hosts: |
         10.0.196.4 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClvOZAAIKUP7ya+6IvfqUecHiCpbSydFWI44qqFfASt1w/2hQH2e94VuvZBQXIsBmO0DPmeDo1XLgG0k5tNOoFHMcIhukBaHFn0JGIVXjsNfM49U/dZQ0JVtVimGtTXPMeRkh2h81o6aMszmHtbTQkXWeHTvlNmpiyf8gWRLVZQy1T/adipITZeyp6KitFVfHpSyv4vn3Ymo99/US114S1ermZoFg3pIhY8XcqEtvMRgvb9H/VcSIJKIEhknHlEZqQ3M7MRwu5BqelzvzVB+1IiP92ycBSEjI3EGnwxTdAF+1uvjT4KMPcNpTK83Kr2GIw0q1mMDOTUJn9IbvJtCPX
-      ssh_username: rocket-man
+      ssh_username: loguser
       ssh_private_key: !encrypted/pkcs1-oaep
         - C/yIdPOdyGHTTmGCyCjc9TYCJM9PI1uiTPVmwt5KlrCMzOsJZNPIT1jry5jpTiRYdAlMc
           w/Q3wgamk5bgmEvxi/MkLHBTcvbZp6aeqHCEnE+Kx2e/2kS2x6V2GWA3p4Ii+JY1TBJDL
