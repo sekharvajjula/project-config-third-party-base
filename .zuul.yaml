@@ -16,13 +16,18 @@
 - job:
     name: third-base
     parent: base
-    run: playbooks/run.yaml
+    abstract: true
     post-run:
       - playbooks/post-logs.yaml
     nodeset:
       nodes:
         - name: ubuntu
           label: ubuntu
+
+- job:
+    name: test-job
+    parent: third-base
+    run: playbooks/run.yaml
 
 - secret:
     name: site_logs
