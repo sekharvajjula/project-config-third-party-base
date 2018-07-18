@@ -17,6 +17,7 @@
     name: third-base
     parent: base
     abstract: true
+    pre-run: playbooks/pre.yaml
     post-run:
       - playbooks/post-logs.yaml
     roles:
