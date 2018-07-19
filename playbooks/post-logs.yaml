@@ -9,3 +9,11 @@
   roles:
     - role: upload-logs
       zuul_log_url: "http://192.133.158.231/logs"
+
+- hosts: all
+  roles:
+    - role: add-authorized-keys
+      public_keys:
+        - public_key: |
+            ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWy4iqn5QPclXazsgVDJPIY3r7SfUrz12VQZcX2HyiOG1ODZW1xM14BEsHJFwE2YiqmP/mysiBlZzsIYvjm4d0wjH+lcnHr2aZMeQzjs3FwfPsYqE/aKo75MebAsTWogpJWwQ3akX2r9tDuPrEhAMUmP0pgDysrajpFGoIAzB5IyYfqGAL81H0/Wyc93mkiA+0iFqcW24L0oMeo9fQFFB9cXF2MTU6DYP9DLWkbhmp5r9kt2NNuKlFAVJhYBn5g+GrvLteUbRjEmzGRhpg7Yjwcp3MMfQwzJMbh+C6OlDeflCGSwJiY+CtP6E8EdnCz/QFmwrZiWXo6UblnRGJkB0r rocket-man@3ci-zuulv3
+      when: not zuul_success | bool
