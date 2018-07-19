@@ -36,6 +36,11 @@
     parent: third-base
     run: playbooks/run.yaml
 
+- job:
+    name: test-job2
+    parent: third-base
+    run: playbooks/run.yaml
+
 - secret:
     name: site_logs
     data:
