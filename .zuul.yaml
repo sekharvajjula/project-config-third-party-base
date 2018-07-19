@@ -26,7 +26,7 @@
       - zuul: zuul-jobs
     nodeset:
       nodes:
-        - name: ubuntu
+        - name: primary
           label: ubuntu
     secrets:
       - site_logs
@@ -96,3 +96,4 @@
     check:
       jobs:
         - test-job
+        - ucsm-testjob
