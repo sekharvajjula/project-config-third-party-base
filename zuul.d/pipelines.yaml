@@ -1,0 +1,17 @@
+---
+- pipeline:
+    name: check
+    manager: independent
+    trigger:
+      gerrit:
+        - event: comment-added
+          comment: cisco-zuulv3-test
+    success:
+      gerrit:
+        Verified: 1
+      buildsdb:
+    failure:
+      gerrit:
+        Verified: -1
+      buildsdb:
+
