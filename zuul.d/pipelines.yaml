@@ -15,3 +15,14 @@
         Verified: -1
       buildsdb:
 
+- pipeline:
+    name: jobtest
+    manager: independent
+    trigger:
+      github:
+        - event: ref-updated
+          ref: ^refs/heads/.*$
+    success:
+      buildsdb:
+    failure:
+      buildsdb:
