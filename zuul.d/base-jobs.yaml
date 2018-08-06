@@ -13,8 +13,8 @@
         - name: primary
           label: ubuntu
     vars:
-      logs_base_url: "http://192.133.158.231/logs"
+      logs_base_url: "http://3ci-logs.ciscolabs.net"
       debug_public_key: |
-        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWy4iqn5QPclXazsgVDJPIY3r7SfUrz12VQZcX2HyiOG1ODZW1xM14BEsHJFwE2YiqmP/mysiBlZzsIYvjm4d0wjH+lcnHr2aZMeQzjs3FwfPsYqE/aKo75MebAsTWogpJWwQ3akX2r9tDuPrEhAMUmP0pgDysrajpFGoIAzB5IyYfqGAL81H0/Wyc93mkiA+0iFqcW24L0oMeo9fQFFB9cXF2MTU6DYP9DLWkbhmp5r9kt2NNuKlFAVJhYBn5g+GrvLteUbRjEmzGRhpg7Yjwcp3MMfQwzJMbh+C6OlDeflCGSwJiY+CtP6E8EdnCz/QFmwrZiWXo6UblnRGJkB0r rocket-man@3ci-zuulv3
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcf0Ah5UJYHgLMrRFvCJD9gt++MxlYs56YilDPOKpoePEYHS5L55J6cxRmUR7/iNSryTORsSo2dS9OSJoB715OwR69SQB9nrLPRRm2lsJuGLzzRVFjX+HREQr/xuLofadUoV3/G3676CxkadVFd6vNod75ZU0Z9XT0bBezmeYo5HKUiGcrv8sGrWe5kSMaCUSyvvT1397jWu0ePhM0QWA9FdCumBDI3TXbIDW+au6j66ovFwuFB652o6K+qsND3Kn/EW41Iiq6PmgyePE2kxJONdqdFiqfnUjCzzBfEN2pbE0Obk/xJZ9A80sSYqUUAumcAES6X/Gm4sCqeggBg8XT rocket-man@3ci-zuulv3
     secrets:
       - site_logs
