@@ -20,3 +20,10 @@
         - dsvm-tempest-ironic-cimc-nexus-job-queens
         - dsvm-tempest-ironic-cimc-nexus-job-pike
         - dsvm-tempest-ironic-cimc-nexus-job-ocata
+
+- project:
+    name: openstack/ironic
+    check:
+      jobs:
+        - dsvm-tempest-ironic-cimc-job
+        - dsvm-tempest-ironic-ucsm-job
