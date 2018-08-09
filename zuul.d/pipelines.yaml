@@ -27,6 +27,8 @@
       gerrit:
         open: True
         current-patchset: True
+      github-smart:
+        open: True
     success:
       gerrit:
         Verified: 1
