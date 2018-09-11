@@ -40,4 +40,4 @@
     name: openstack-dev/sandbox
     check:
       jobs:
-        - noop
+        - dsvm-tempest-ironic-cimc-job
