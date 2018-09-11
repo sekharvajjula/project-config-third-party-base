@@ -35,3 +35,9 @@
       jobs:
         - dsvm-tempest-ironic-cimc-job
         - dsvm-tempest-ironic-ucsm-job
+
+- project:
+    name: openstack-dev/sandbox
+    check:
+      jobs:
+        - noop
