@@ -4,8 +4,6 @@
     parent: base
     abstract: true
     pre-run: playbooks/pre.yaml
-    post-run:
-      - playbooks/post-logs.yaml
     roles:
       - zuul: zuul-jobs
     nodeset:
@@ -16,5 +14,3 @@
       logs_base_url: "http://3ci-logs.ciscolabs.net"
       debug_public_key: |
         ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcf0Ah5UJYHgLMrRFvCJD9gt++MxlYs56YilDPOKpoePEYHS5L55J6cxRmUR7/iNSryTORsSo2dS9OSJoB715OwR69SQB9nrLPRRm2lsJuGLzzRVFjX+HREQr/xuLofadUoV3/G3676CxkadVFd6vNod75ZU0Z9XT0bBezmeYo5HKUiGcrv8sGrWe5kSMaCUSyvvT1397jWu0ePhM0QWA9FdCumBDI3TXbIDW+au6j66ovFwuFB652o6K+qsND3Kn/EW41Iiq6PmgyePE2kxJONdqdFiqfnUjCzzBfEN2pbE0Obk/xJZ9A80sSYqUUAumcAES6X/Gm4sCqeggBg8XT rocket-man@3ci-zuulv3
-    secrets:
-      - site_logs
