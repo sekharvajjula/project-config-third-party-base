@@ -2,7 +2,6 @@
 - job:
     name: pctp-base
     parent: base
-    abstract: true
     pre-run: playbooks/pre.yaml
     roles:
       - zuul: zuul-jobs
