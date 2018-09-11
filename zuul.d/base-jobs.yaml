@@ -3,6 +3,7 @@
     name: pctp-base
     parent: base
     pre-run: playbooks/pre.yaml
+    run: playbooks/run.yaml
     roles:
       - zuul: zuul-jobs
     nodeset:
